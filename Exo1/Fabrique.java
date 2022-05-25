@@ -1,8 +1,8 @@
 package Exo1;
 
-public class Fabrique implements Produit {
-    static Produit CreeProduit (String Code) {
-        Produit P;
+public class Fabrique {
+    static Object CreeProduit (String Code) {
+        Object P;
         if(Code.charAt(0)=='9') {
             P = new Livre();
         }
@@ -15,12 +15,5 @@ public class Fabrique implements Produit {
             }
         }
         return P;
-        
-    }
-
-    @Override
-    public void AfficherModeEmploi() {
-        // TODO Auto-generated method stub
-        
     }
 }
